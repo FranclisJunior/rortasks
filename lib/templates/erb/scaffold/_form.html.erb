@@ -13,17 +13,19 @@
 
 <% attributes.each do |attribute| -%>
   <div class="field">
-<% if attribute.password_digest? -%>
-    <%%= f.label :password %><br>
-    <%%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%%= f.label :password_confirmation %><br>
-    <%%= f.password_field :password_confirmation %>
-<% else -%>
     <%%= f.label :<%= attribute.column_name %> %><br>
-    <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>
-<% end -%>
+    <% if attribute.column_name == "status" -%>
+      <datalist id="<%= singular_table_name %>_status_list">
+        <option value="Open">
+        <option value="Closed">
+        <option value="On going">
+        <option value="Review">
+        <option value="Cancelled">
+      </datalist>
+      <input list="<%= singular_table_name %>_status_list" id="<%= singular_table_name %>_status">
+    <% else -%>
+      <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>
+    <% end -%>
   </div>
 <% end -%>
   <div class="actions">
