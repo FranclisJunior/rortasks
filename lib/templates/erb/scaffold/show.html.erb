@@ -1,10 +1,20 @@
 <p id="notice"><%%= notice %></p>
 
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
-<p>
-  <strong><%= attribute.human_name %>:</strong>
-  <%%= @<%= singular_table_name %>.<%= attribute.name %> %>
-</p>
+
+
+  <% if attribute.name == 'tags' -%>
+    <span  class="w3-tag w3-green">
+  <% elsif attribute.name == 'labels' -%>
+    <span class="w3-tag w3-red" >
+  <% elsif attribute.name == 'keywords' -%>
+    <span class="w3-tag w3-blue">
+  <% else -%>
+    <span>
+  <% end -%>
+    <strong><%= attribute.human_name %>:</strong>
+    <%%= @<%= singular_table_name %>.<%= attribute.name %> %>
+  </span>
 
 <% end -%>
 <%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) %> |

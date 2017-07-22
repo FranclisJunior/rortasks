@@ -1,44 +1,60 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Loginname:</strong>
-  <%= @bugzillauser.loginname %>
-</p>
 
-<p>
-  <strong>Realname:</strong>
-  <%= @bugzillauser.realname %>
-</p>
 
-<p>
-  <strong>Password:</strong>
-  <%= @bugzillauser.password %>
-</p>
+      <span>
+      <strong>Loginname:</strong>
+    <%= @bugzillauser.loginname %>
+  </span>
 
-<p>
-  <strong>Bugmaildisabled:</strong>
-  <%= @bugzillauser.bugmaildisabled %>
-</p>
 
-<p>
-  <strong>Disabletext:</strong>
-  <%= @bugzillauser.disabletext %>
-</p>
 
-<p>
-  <strong>Adminpermission:</strong>
-  <%= @bugzillauser.adminpermission %>
-</p>
+      <span>
+      <strong>Realname:</strong>
+    <%= @bugzillauser.realname %>
+  </span>
 
-<p>
-  <strong>Creategroupspermission:</strong>
-  <%= @bugzillauser.creategroupspermission %>
-</p>
 
-<p>
-  <strong>Edituserspermission:</strong>
-  <%= @bugzillauser.edituserspermission %>
-</p>
+
+      <span>
+      <strong>Password:</strong>
+    <%= @bugzillauser.password %>
+  </span>
+
+
+
+      <span>
+      <strong>Bugmaildisabled:</strong>
+    <%= @bugzillauser.bugmaildisabled %>
+  </span>
+
+
+
+      <span>
+      <strong>Disabletext:</strong>
+    <%= @bugzillauser.disabletext %>
+  </span>
+
+
+
+      <span>
+      <strong>Adminpermission:</strong>
+    <%= @bugzillauser.adminpermission %>
+  </span>
+
+
+
+      <span>
+      <strong>Creategroupspermission:</strong>
+    <%= @bugzillauser.creategroupspermission %>
+  </span>
+
+
+
+      <span>
+      <strong>Edituserspermission:</strong>
+    <%= @bugzillauser.edituserspermission %>
+  </span>
 
 <%= link_to 'Edit', edit_bugzillauser_path(@bugzillauser) %> |
 <%= link_to 'Back', bugzillausers_path %>

@@ -1,49 +1,67 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
 
-<p>
-  <strong>Identifier:</strong>
-  <%= @project.identifier %>
-</p>
+      <span>
+      <strong>Name:</strong>
+    <%= @project.name %>
+  </span>
 
-<p>
-  <strong>Homepage:</strong>
-  <%= @project.homepage %>
-</p>
 
-<p>
-  <strong>Public:</strong>
-  <%= @project.public %>
-</p>
 
-<p>
-  <strong>Subprojectof:</strong>
-  <%= @project.subprojectof %>
-</p>
+      <span>
+      <strong>Description:</strong>
+    <%= @project.description %>
+  </span>
 
-<p>
-  <strong>Bugtracker:</strong>
-  <%= @project.bugtracker %>
-</p>
 
-<p>
-  <strong>Featuretracker:</strong>
-  <%= @project.featuretracker %>
-</p>
 
-<p>
-  <strong>Supporttracker:</strong>
-  <%= @project.supporttracker %>
-</p>
+      <span>
+      <strong>Identifier:</strong>
+    <%= @project.identifier %>
+  </span>
+
+
+
+      <span>
+      <strong>Homepage:</strong>
+    <%= @project.homepage %>
+  </span>
+
+
+
+      <span>
+      <strong>Public:</strong>
+    <%= @project.public %>
+  </span>
+
+
+
+      <span>
+      <strong>Subprojectof:</strong>
+    <%= @project.subprojectof %>
+  </span>
+
+
+
+      <span>
+      <strong>Bugtracker:</strong>
+    <%= @project.bugtracker %>
+  </span>
+
+
+
+      <span>
+      <strong>Featuretracker:</strong>
+    <%= @project.featuretracker %>
+  </span>
+
+
+
+      <span>
+      <strong>Supporttracker:</strong>
+    <%= @project.supporttracker %>
+  </span>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>

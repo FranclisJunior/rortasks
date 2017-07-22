@@ -1,39 +1,53 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Code:</strong>
-  <%= @testcase.code %>
-</p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @testcase.title %>
-</p>
 
-<p>
-  <strong>Summary:</strong>
-  <%= @testcase.summary %>
-</p>
+      <span>
+      <strong>Code:</strong>
+    <%= @testcase.code %>
+  </span>
 
-<p>
-  <strong>Preconditions:</strong>
-  <%= @testcase.preconditions %>
-</p>
 
-<p>
-  <strong>Status:</strong>
-  <%= @testcase.status %>
-</p>
 
-<p>
-  <strong>Importance:</strong>
-  <%= @testcase.importance %>
-</p>
+      <span>
+      <strong>Title:</strong>
+    <%= @testcase.title %>
+  </span>
 
-<p>
-  <strong>Minutes:</strong>
-  <%= @testcase.minutes %>
-</p>
+
+
+      <span>
+      <strong>Summary:</strong>
+    <%= @testcase.summary %>
+  </span>
+
+
+
+      <span>
+      <strong>Preconditions:</strong>
+    <%= @testcase.preconditions %>
+  </span>
+
+
+
+      <span>
+      <strong>Status:</strong>
+    <%= @testcase.status %>
+  </span>
+
+
+
+      <span>
+      <strong>Importance:</strong>
+    <%= @testcase.importance %>
+  </span>
+
+
+
+      <span>
+      <strong>Minutes:</strong>
+    <%= @testcase.minutes %>
+  </span>
 
 <%= link_to 'Edit', edit_testcase_path(@testcase) %> |
 <%= link_to 'Back', testcases_path %>

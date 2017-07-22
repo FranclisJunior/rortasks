@@ -1,119 +1,165 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Code:</strong>
-  <%= @bug.code %>
-</p>
 
-<p>
-  <strong>Product:</strong>
-  <%= @bug.product %>
-</p>
 
-<p>
-  <strong>Component:</strong>
-  <%= @bug.component %>
-</p>
+      <span>
+      <strong>Code:</strong>
+    <%= @bug.code %>
+  </span>
 
-<p>
-  <strong>Version:</strong>
-  <%= @bug.version %>
-</p>
 
-<p>
-  <strong>Summary:</strong>
-  <%= @bug.summary %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @bug.description %>
-</p>
+      <span>
+      <strong>Product:</strong>
+    <%= @bug.product %>
+  </span>
 
-<p>
-  <strong>Hardware:</strong>
-  <%= @bug.hardware %>
-</p>
 
-<p>
-  <strong>Importance:</strong>
-  <%= @bug.importance %>
-</p>
 
-<p>
-  <strong>Targetmilestone:</strong>
-  <%= @bug.targetmilestone %>
-</p>
+      <span>
+      <strong>Component:</strong>
+    <%= @bug.component %>
+  </span>
 
-<p>
-  <strong>Assignedto:</strong>
-  <%= @bug.assignedto %>
-</p>
 
-<p>
-  <strong>Qacontact:</strong>
-  <%= @bug.qacontact %>
-</p>
 
-<p>
-  <strong>Url:</strong>
-  <%= @bug.url %>
-</p>
+      <span>
+      <strong>Version:</strong>
+    <%= @bug.version %>
+  </span>
 
-<p>
-  <strong>Whiteboard:</strong>
-  <%= @bug.whiteboard %>
-</p>
 
-<p>
-  <strong>Keywords:</strong>
-  <%= @bug.keywords %>
-</p>
 
-<p>
-  <strong>Tags:</strong>
-  <%= @bug.tags %>
-</p>
+      <span>
+      <strong>Summary:</strong>
+    <%= @bug.summary %>
+  </span>
 
-<p>
-  <strong>Dependson:</strong>
-  <%= @bug.dependson %>
-</p>
 
-<p>
-  <strong>Blocks:</strong>
-  <%= @bug.blocks %>
-</p>
 
-<p>
-  <strong>Origestimated:</strong>
-  <%= @bug.origestimated %>
-</p>
+      <span>
+      <strong>Description:</strong>
+    <%= @bug.description %>
+  </span>
 
-<p>
-  <strong>Hoursworked:</strong>
-  <%= @bug.hoursworked %>
-</p>
 
-<p>
-  <strong>Hoursleft:</strong>
-  <%= @bug.hoursleft %>
-</p>
 
-<p>
-  <strong>Deadline:</strong>
-  <%= @bug.deadline %>
-</p>
+      <span>
+      <strong>Hardware:</strong>
+    <%= @bug.hardware %>
+  </span>
 
-<p>
-  <strong>Additionalcomments:</strong>
-  <%= @bug.additionalcomments %>
-</p>
 
-<p>
-  <strong>Status:</strong>
-  <%= @bug.status %>
-</p>
+
+      <span>
+      <strong>Importance:</strong>
+    <%= @bug.importance %>
+  </span>
+
+
+
+      <span>
+      <strong>Targetmilestone:</strong>
+    <%= @bug.targetmilestone %>
+  </span>
+
+
+
+      <span>
+      <strong>Assignedto:</strong>
+    <%= @bug.assignedto %>
+  </span>
+
+
+
+      <span>
+      <strong>Qacontact:</strong>
+    <%= @bug.qacontact %>
+  </span>
+
+
+
+      <span>
+      <strong>Url:</strong>
+    <%= @bug.url %>
+  </span>
+
+
+
+      <span>
+      <strong>Whiteboard:</strong>
+    <%= @bug.whiteboard %>
+  </span>
+
+
+
+      <span class="w3-tag w3-blue">
+      <strong>Keywords:</strong>
+    <%= @bug.keywords %>
+  </span>
+
+
+
+      <span  class="w3-tag w3-green">
+      <strong>Tags:</strong>
+    <%= @bug.tags %>
+  </span>
+
+
+
+      <span>
+      <strong>Dependson:</strong>
+    <%= @bug.dependson %>
+  </span>
+
+
+
+      <span>
+      <strong>Blocks:</strong>
+    <%= @bug.blocks %>
+  </span>
+
+
+
+      <span>
+      <strong>Origestimated:</strong>
+    <%= @bug.origestimated %>
+  </span>
+
+
+
+      <span>
+      <strong>Hoursworked:</strong>
+    <%= @bug.hoursworked %>
+  </span>
+
+
+
+      <span>
+      <strong>Hoursleft:</strong>
+    <%= @bug.hoursleft %>
+  </span>
+
+
+
+      <span>
+      <strong>Deadline:</strong>
+    <%= @bug.deadline %>
+  </span>
+
+
+
+      <span>
+      <strong>Additionalcomments:</strong>
+    <%= @bug.additionalcomments %>
+  </span>
+
+
+
+      <span>
+      <strong>Status:</strong>
+    <%= @bug.status %>
+  </span>
 
 <%= link_to 'Edit', edit_bug_path(@bug) %> |
 <%= link_to 'Back', bugs_path %>

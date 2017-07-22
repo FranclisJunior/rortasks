@@ -1,84 +1,116 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Code:</strong>
-  <%= @issue.code %>
-</p>
 
-<p>
-  <strong>Project:</strong>
-  <%= @issue.project %>
-</p>
 
-<p>
-  <strong>Issuetype:</strong>
-  <%= @issue.issuetype %>
-</p>
+      <span>
+      <strong>Code:</strong>
+    <%= @issue.code %>
+  </span>
 
-<p>
-  <strong>Summary:</strong>
-  <%= @issue.summary %>
-</p>
 
-<p>
-  <strong>Storypoints:</strong>
-  <%= @issue.storypoints %>
-</p>
 
-<p>
-  <strong>Priority:</strong>
-  <%= @issue.priority %>
-</p>
+      <span>
+      <strong>Project:</strong>
+    <%= @issue.project %>
+  </span>
 
-<p>
-  <strong>Duedate:</strong>
-  <%= @issue.duedate %>
-</p>
 
-<p>
-  <strong>Components:</strong>
-  <%= @issue.components %>
-</p>
 
-<p>
-  <strong>Affectsversions:</strong>
-  <%= @issue.affectsversions %>
-</p>
+      <span>
+      <strong>Issuetype:</strong>
+    <%= @issue.issuetype %>
+  </span>
 
-<p>
-  <strong>Fixversions:</strong>
-  <%= @issue.fixversions %>
-</p>
 
-<p>
-  <strong>Assignee:</strong>
-  <%= @issue.assignee %>
-</p>
 
-<p>
-  <strong>Environment:</strong>
-  <%= @issue.environment %>
-</p>
+      <span>
+      <strong>Summary:</strong>
+    <%= @issue.summary %>
+  </span>
 
-<p>
-  <strong>Description:</strong>
-  <%= @issue.description %>
-</p>
 
-<p>
-  <strong>Labels:</strong>
-  <%= @issue.labels %>
-</p>
 
-<p>
-  <strong>Epic:</strong>
-  <%= @issue.epic %>
-</p>
+      <span>
+      <strong>Storypoints:</strong>
+    <%= @issue.storypoints %>
+  </span>
 
-<p>
-  <strong>Sprint:</strong>
-  <%= @issue.sprint %>
-</p>
+
+
+      <span>
+      <strong>Priority:</strong>
+    <%= @issue.priority %>
+  </span>
+
+
+
+      <span>
+      <strong>Duedate:</strong>
+    <%= @issue.duedate %>
+  </span>
+
+
+
+      <span>
+      <strong>Components:</strong>
+    <%= @issue.components %>
+  </span>
+
+
+
+      <span>
+      <strong>Affectsversions:</strong>
+    <%= @issue.affectsversions %>
+  </span>
+
+
+
+      <span>
+      <strong>Fixversions:</strong>
+    <%= @issue.fixversions %>
+  </span>
+
+
+
+      <span>
+      <strong>Assignee:</strong>
+    <%= @issue.assignee %>
+  </span>
+
+
+
+      <span>
+      <strong>Environment:</strong>
+    <%= @issue.environment %>
+  </span>
+
+
+
+      <span>
+      <strong>Description:</strong>
+    <%= @issue.description %>
+  </span>
+
+
+
+      <span class="w3-tag w3-red" >
+      <strong>Labels:</strong>
+    <%= @issue.labels %>
+  </span>
+
+
+
+      <span>
+      <strong>Epic:</strong>
+    <%= @issue.epic %>
+  </span>
+
+
+
+      <span>
+      <strong>Sprint:</strong>
+    <%= @issue.sprint %>
+  </span>
 
 <%= link_to 'Edit', edit_issue_path(@issue) %> |
 <%= link_to 'Back', issues_path %>

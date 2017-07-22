@@ -1,64 +1,88 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Code:</strong>
-  <%= @quiz.code %>
-</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @quiz.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @quiz.description %>
-</p>
+      <span>
+      <strong>Code:</strong>
+    <%= @quiz.code %>
+  </span>
 
-<p>
-  <strong>Displaydescription:</strong>
-  <%= @quiz.displaydescription %>
-</p>
 
-<p>
-  <strong>Open:</strong>
-  <%= @quiz.open %>
-</p>
 
-<p>
-  <strong>Close:</strong>
-  <%= @quiz.close %>
-</p>
+      <span>
+      <strong>Name:</strong>
+    <%= @quiz.name %>
+  </span>
 
-<p>
-  <strong>Timelimit:</strong>
-  <%= @quiz.timelimit %>
-</p>
 
-<p>
-  <strong>Whentimeexpires:</strong>
-  <%= @quiz.whentimeexpires %>
-</p>
 
-<p>
-  <strong>Submissiongraceperiod:</strong>
-  <%= @quiz.submissiongraceperiod %>
-</p>
+      <span>
+      <strong>Description:</strong>
+    <%= @quiz.description %>
+  </span>
 
-<p>
-  <strong>Gradecategory:</strong>
-  <%= @quiz.gradecategory %>
-</p>
 
-<p>
-  <strong>Attemptsallowed:</strong>
-  <%= @quiz.attemptsallowed %>
-</p>
 
-<p>
-  <strong>Gradingmethod:</strong>
-  <%= @quiz.gradingmethod %>
-</p>
+      <span>
+      <strong>Displaydescription:</strong>
+    <%= @quiz.displaydescription %>
+  </span>
+
+
+
+      <span>
+      <strong>Open:</strong>
+    <%= @quiz.open %>
+  </span>
+
+
+
+      <span>
+      <strong>Close:</strong>
+    <%= @quiz.close %>
+  </span>
+
+
+
+      <span>
+      <strong>Timelimit:</strong>
+    <%= @quiz.timelimit %>
+  </span>
+
+
+
+      <span>
+      <strong>Whentimeexpires:</strong>
+    <%= @quiz.whentimeexpires %>
+  </span>
+
+
+
+      <span>
+      <strong>Submissiongraceperiod:</strong>
+    <%= @quiz.submissiongraceperiod %>
+  </span>
+
+
+
+      <span>
+      <strong>Gradecategory:</strong>
+    <%= @quiz.gradecategory %>
+  </span>
+
+
+
+      <span>
+      <strong>Attemptsallowed:</strong>
+    <%= @quiz.attemptsallowed %>
+  </span>
+
+
+
+      <span>
+      <strong>Gradingmethod:</strong>
+    <%= @quiz.gradingmethod %>
+  </span>
 
 <%= link_to 'Edit', edit_quiz_path(@quiz) %> |
 <%= link_to 'Back', quizzes_path %>
