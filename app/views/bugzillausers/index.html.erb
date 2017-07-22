@@ -1,8 +1,37 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Bugzillausers</h1>
 
-<table>
+<div class="w3-bar w3-large w3-theme-d4">
+  <a href="#" class="w3-bar-item w3-button">
+    <i class="fa fa-bars"></i></a>  
+  <span class="w3-bar-item">Listing Bugzillausers</span>
+  <a href="#" class="w3-bar-item w3-button w3-right">
+    <i class="fa fa-search"></i></a>
+</div>
+
+<div class="w3-container w3-content">
+      <% @bugzillausers.each do |bugzillauser| %>
+        <div class="w3-panel w3-white w3-card-2 w3-display-container" >
+                            <p><%= bugzillauser.loginname %></p>
+                            <p><%= bugzillauser.realname %></p>
+                            <p><%= bugzillauser.password %></p>
+                            <p><%= bugzillauser.bugmaildisabled %></p>
+                            <p><%= bugzillauser.disabletext %></p>
+                            <p><%= bugzillauser.adminpermission %></p>
+                            <p><%= bugzillauser.creategroupspermission %></p>
+                            <p><%= bugzillauser.edituserspermission %></p>
+                    
+          
+          <%= link_to 'Show', bugzillauser %>
+          <%= link_to 'Edit', edit_bugzillauser_path(bugzillauser) %>
+          <%= link_to 'Destroy', bugzillauser, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+        </div>
+      <% end %>
+</div>
+
+
+<!-- <table>
   <thead>
     <tr>
       <th>Loginname</th>
@@ -19,22 +48,27 @@
 
   <tbody>
     <% @bugzillausers.each do |bugzillauser| %>
-      <tr>
-        <td><%= bugzillauser.loginname %></td>
-        <td><%= bugzillauser.realname %></td>
-        <td><%= bugzillauser.password %></td>
-        <td><%= bugzillauser.bugmaildisabled %></td>
-        <td><%= bugzillauser.disabletext %></td>
-        <td><%= bugzillauser.adminpermission %></td>
-        <td><%= bugzillauser.creategroupspermission %></td>
-        <td><%= bugzillauser.edituserspermission %></td>
-        <td><%= link_to 'Show', bugzillauser %></td>
-        <td><%= link_to 'Edit', edit_bugzillauser_path(bugzillauser) %></td>
-        <td><%= link_to 'Destroy', bugzillauser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="w3-container w3-content">
+        <div class="w3-panel w3-white w3-card-2 w3-display-container">
+
+          <tr>
+                <td><%= bugzillauser.loginname %></td>
+                <td><%= bugzillauser.realname %></td>
+                <td><%= bugzillauser.password %></td>
+                <td><%= bugzillauser.bugmaildisabled %></td>
+                <td><%= bugzillauser.disabletext %></td>
+                <td><%= bugzillauser.adminpermission %></td>
+                <td><%= bugzillauser.creategroupspermission %></td>
+                <td><%= bugzillauser.edituserspermission %></td>
+                <td><%= link_to 'Show', bugzillauser %></td>
+            <td><%= link_to 'Edit', edit_bugzillauser_path(bugzillauser) %></td>
+            <td><%= link_to 'Destroy', bugzillauser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        </div>
+      </div>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
 <br>
 
