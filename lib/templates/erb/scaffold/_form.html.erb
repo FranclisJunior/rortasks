@@ -13,17 +13,14 @@
 
 <% attributes.each do |attribute| -%>
   <div class="field">
-<% if attribute.password_digest? -%>
-    <%%= f.label :password %><br>
-    <%%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%%= f.label :password_confirmation %><br>
-    <%%= f.password_field :password_confirmation %>
-<% else -%>
     <%%= f.label :<%= attribute.column_name %> %><br>
-    <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>
-<% end -%>
+    <% if attribute.column_name == "description" -%>
+      <%%= f.text_area(:<%= attribute.column_name %>, cols: 50, rows: 8) %>
+    <% elsif attribute.column_name == "summary" -%>
+      <%%= f.text_area(:<%= attribute.column_name %>, cols: 50, rows: 5) %>
+    <% else -%>
+      <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>
+    <% end -%>
   </div>
 <% end -%>
   <div class="actions">
