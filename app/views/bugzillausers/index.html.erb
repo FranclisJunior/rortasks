@@ -4,6 +4,7 @@
 
 <table>
   <thead>
+
     <tr>
       <th>Loginname</th>
       <th>Realname</th>
@@ -19,8 +20,10 @@
 
   <tbody>
     <% @bugzillausers.each do |bugzillauser| %>
-      <tr>
-        <td><%= bugzillauser.loginname %></td>
+      
+              <tr>
+      
+              <td><%= bugzillauser.loginname %></td>
         <td><%= bugzillauser.realname %></td>
         <td><%= bugzillauser.password %></td>
         <td><%= bugzillauser.bugmaildisabled %></td>

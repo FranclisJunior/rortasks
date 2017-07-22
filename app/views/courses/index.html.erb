@@ -4,6 +4,7 @@
 
 <table>
   <thead>
+
     <tr>
       <th>Code</th>
       <th>Fullname</th>
@@ -25,8 +26,10 @@
 
   <tbody>
     <% @courses.each do |course| %>
-      <tr>
-        <td><%= course.code %></td>
+      
+              <tr>
+      
+              <td><%= course.code %></td>
         <td><%= course.fullname %></td>
         <td><%= course.shortname %></td>
         <td><%= course.courseidnumber %></td>

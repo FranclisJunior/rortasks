@@ -4,6 +4,7 @@
 
 <table>
   <thead>
+
     <tr>
       <th>Name</th>
       <th>Description</th>
@@ -20,8 +21,10 @@
 
   <tbody>
     <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.name %></td>
+      
+              <tr>
+      
+              <td><%= project.name %></td>
         <td><%= project.description %></td>
         <td><%= project.identifier %></td>
         <td><%= project.homepage %></td>

@@ -4,6 +4,7 @@
 
 <table>
   <thead>
+
     <tr>
       <th>Name</th>
       <th>Alias</th>
@@ -38,8 +39,10 @@
 
   <tbody>
     <% @salesforceusers.each do |salesforceuser| %>
-      <tr>
-        <td><%= salesforceuser.name %></td>
+      
+              <tr>
+      
+              <td><%= salesforceuser.name %></td>
         <td><%= salesforceuser.alias %></td>
         <td><%= salesforceuser.email %></td>
         <td><%= salesforceuser.username %></td>

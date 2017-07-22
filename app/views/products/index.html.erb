@@ -4,6 +4,7 @@
 
 <table>
   <thead>
+
     <tr>
       <th>Code</th>
       <th>Name</th>
@@ -60,8 +61,10 @@
 
   <tbody>
     <% @products.each do |product| %>
-      <tr>
-        <td><%= product.code %></td>
+      
+              <tr class="w3-hover-green">
+      
+              <td><%= product.code %></td>
         <td><%= product.name %></td>
         <td><%= product.model %></td>
         <td><%= product.sku %></td>

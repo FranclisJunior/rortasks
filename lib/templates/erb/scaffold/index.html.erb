@@ -4,6 +4,7 @@
 
 <table>
   <thead>
+
     <tr>
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
       <th><%= attribute.human_name %></th>
@@ -14,8 +15,14 @@
 
   <tbody>
     <%% @<%= plural_table_name %>.each do |<%= singular_table_name %>| %>
-      <tr>
-<% attributes.reject(&:password_digest?).each do |attribute| -%>
+      
+      <% if plural_table_name.titleize == "Bugs" or plural_table_name.titleize == "Issues" or plural_table_name.titleize == "Products" or plural_table_name.titleize == "Campaigns" -%>
+        <tr class="w3-hover-green">
+      <% else -%>
+        <tr>
+      <% end -%>
+
+      <% attributes.reject(&:password_digest?).each do |attribute| -%>
         <td><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>
 <% end -%>
         <td><%%= link_to 'Show', <%= singular_table_name %> %></td>

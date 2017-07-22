@@ -4,6 +4,7 @@
 
 <table>
   <thead>
+
     <tr>
       <th>Code</th>
       <th>Product</th>
@@ -25,8 +26,10 @@
 
   <tbody>
     <% @bugzillaproducts.each do |bugzillaproduct| %>
-      <tr>
-        <td><%= bugzillaproduct.code %></td>
+      
+              <tr>
+      
+              <td><%= bugzillaproduct.code %></td>
         <td><%= bugzillaproduct.product %></td>
         <td><%= bugzillaproduct.description %></td>
         <td><%= bugzillaproduct.openforbugentry %></td>
